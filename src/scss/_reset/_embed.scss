@@ -1,0 +1,20 @@
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}

@@ -1,0 +1,59 @@
+{
+  "name": "web-starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=\"dev\" webpack serve",
+    "stg": "cross-env NODE_ENV=\"stg\" webpack serve",
+    "prd": "cross-env NODE_ENV=\"prd\" webpack serve",
+    "build:dev": "cross-env NODE_ENV=\"dev\" webpack",
+    "build:stg": "cross-env NODE_ENV=\"stg\" webpack",
+    "build:prd": "cross-env NODE_ENV=\"prd\" webpack",
+    "prettier": "prettier --write src/js/**/*.{js,ts,json} webpack.config.js/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1-10/web-starter-kit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1-10/web-starter-kit/issues"
+  },
+  "homepage": "https://github.com/1-10/web-starter-kit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "autoprefixer": "^10.2.6",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "husky": "^4.3.8",
+    "lint-staged": "^11.0.0",
+    "mini-css-extract-plugin": "^2.0.0",
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.0",
+    "prettier": "^2.3.2",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "terser-webpack-plugin": "^5.1.4",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-concat-plugin": "^3.0.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-remove-empty-scripts": "^0.7.1"
+  },
+  "dependencies": {
+    "event-emitter": "^0.3.5"
+  }
+}

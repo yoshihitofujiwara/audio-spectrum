@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:active,
+  &:hover {
+    outline-width: 0;
+  }
+}
+
+a,
+area,
+button,
+[role="button"],
+input:not([type=range]),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
